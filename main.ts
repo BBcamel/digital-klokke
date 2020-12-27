@@ -8,7 +8,7 @@ input.onButtonPressed(Button.A, function () {
 input.onGesture(Gesture.Shake, function () {
     ajust = hours
     if (ampm) {
-        if (hours < 12) {
+        if (hours > 12) {
             ajust = hours - 12
         } else {
             if (hours == 0) {
@@ -36,9 +36,9 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     if (minutes < 59) {
-        hours += 1
+        minutes += 1
     } else {
-        hours = 0
+        minutes = 0
     }
 })
 let minutes = 0
