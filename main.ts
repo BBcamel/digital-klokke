@@ -17,7 +17,7 @@ input.onGesture(Gesture.Shake, function () {
         }
     }
     time = "" + ajust
-    time = "" + time + ""
+    time = "" + time + ":"
     if (minutes < 10) {
         time = "" + time + "0"
     }
